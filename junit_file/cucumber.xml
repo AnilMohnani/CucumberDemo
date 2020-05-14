@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="32.92">
+    <testcase classname="Amart Login Application" name="Amart Login testing" time="27.4">
+        <failure message="expected:&lt;M[y account]&gt; but was:&lt;M[Y ACCOUNT]&gt;" type="junit.framework.ComparisonFailure">
+            <![CDATA[Given User is on Login Screen of the Amart App..............................passed
+When User enters email and password.........................................passed
+Then User must be successfully log into App.................................failed
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<M[y account]> but was:<M[Y ACCOUNT]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at stepDefinitions.AmartLoginSteps.user_must_be_successfully_loginto_app(AmartLoginSteps.java:35)
+	at ✽.User must be successfully log into App(file:///C:/Anil/CucumberRahul/src/test/java/features/Amart.feature:7)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Amart Login Application" name="Amart logout" time="5.126">
+        <system-out>
+            <![CDATA[When User is on profile home screen.........................................passed
+Then User clicks on logout..................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

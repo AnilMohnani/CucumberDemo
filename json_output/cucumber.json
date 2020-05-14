@@ -1,0 +1,96 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-13T20:07:29.716Z",
+        "line": 3,
+        "name": "Amart Login testing",
+        "description": "",
+        "id": "amart-login-application;amart-login-testing",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23244528600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Login Screen of the Amart App",
+            "match": {
+              "location": "stepDefinitions.AmartLoginSteps.user_is_on_login_screen_of_the_amart_app()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3972302400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters email and password",
+            "match": {
+              "location": "stepDefinitions.AmartLoginSteps.user_enters_email_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003cM[y account]\u003e but was:\u003cM[Y ACCOUNT]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat stepDefinitions.AmartLoginSteps.user_must_be_successfully_loginto_app(AmartLoginSteps.java:35)\r\n\tat ✽.User must be successfully log into App(file:///C:/Anil/CucumberRahul/src/test/java/features/Amart.feature:7)\r\n",
+              "duration": 86107300,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User must be successfully log into App",
+            "match": {
+              "location": "stepDefinitions.AmartLoginSteps.user_must_be_successfully_loginto_app()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-13T20:07:57.150Z",
+        "line": 9,
+        "name": "Amart logout",
+        "description": "",
+        "id": "amart-login-application;amart-logout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 24579800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User is on profile home screen",
+            "match": {
+              "location": "stepDefinitions.AmartLoginSteps.user_is_on_profile_home_screen()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5095898300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User clicks on logout",
+            "match": {
+              "location": "stepDefinitions.AmartLoginSteps.user_clicks_on_logout()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Amart Login Application",
+    "description": "",
+    "id": "amart-login-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Amart.feature",
+    "tags": []
+  }
+]
